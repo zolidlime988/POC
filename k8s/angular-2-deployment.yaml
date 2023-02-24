@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: angular-2
+  name: angular-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: angular-2
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: angular-2
+    spec:
+      containers:
+      - image: zolidlime988/angular-v2
+        name: angular-v2
+        ports:
+        - name: angular-port
+          containerPort: 8080
+        resources: {}
+status: {}
