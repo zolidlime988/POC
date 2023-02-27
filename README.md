@@ -12,4 +12,10 @@
 3. sh /angular/angular-v2/script.sh
 4. sh /k8s/script.sh
 
+
+# How to build angular inside k8s using cmd... (V2)
+
+1. cd POC
+2. sh script.sh
+
 notes: this is the demo version, further develop will use the helm chart instead of shell script.
