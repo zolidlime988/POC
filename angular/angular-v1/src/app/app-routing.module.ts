@@ -13,7 +13,8 @@ const routes: Routes = [
         loadChildren: () => import('./home-one-module/home-one-module.module').then(m => m.HomeOneModuleModule)
       }
     ]
-  }
+  },
+  { path: '**', component: TestDefaultComponentComponent }
 ];
 
 @NgModule({
